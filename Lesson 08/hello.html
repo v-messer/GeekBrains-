@@ -4,10 +4,8 @@
  	var b = parseInt(prompt('B:'));
  	var c = parseInt(prompt('C:'));	
 
- 	if (isNaN(a) || isNaN(b) || isNaN(c)){
- 		alert('ай-яй-яй, надо было вводить только числа :(');
- 	} else {
- 		alert('здорово, когда-нибудь эти числа будут использованы ;)');
+ 	if (((a>b) && (a<c)) || ((a>c) && (a<b))) {
+ 		alert('A - между B и C');
  	}
 
 
