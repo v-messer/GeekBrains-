@@ -1,9 +1,17 @@
 <meta charset="utf-8">
 <script>
- 	var n = 0;
- 	while(n<=9) {
+	
+	var n = 0;
+
+ 	do {
+ 		if((Math.random()*6) < 1 ) {
+ 			alert('Финита ля комедия');
+ 			break;
+ 		}
+
  		n++;
- 		alert(n);
- 	}
+ 	} while (true);
+
+ 	alert('Раундов сыграно: ' + n);
 
 </script>
