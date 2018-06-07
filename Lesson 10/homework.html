@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<script>
+
+	var summ = parseInt(prompt('Введите сумму вклада'));
+	var percent = parseInt(prompt('Введите процент вклада'));
+	var srok = parseInt(prompt('Введите срок вклада'));
+	var i;
+
+	for (i=0; i<srok; i++){
+		summ = summ + summ * percent/100;
+	}
+
+	alert('На счёте будет: ' + summ);
+
+</script>
