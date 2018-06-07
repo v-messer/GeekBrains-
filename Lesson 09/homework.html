@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script>
+	
+	var n = 0;
+
+ 	do {
+
+ 		if (prompt('играем - 1, другое - стоп:') == 1) {
+ 			if((Math.random()*6) < 1 ) {
+ 			alert('Финита ля комедия');
+ 			break;
+ 			}
+ 			n++;
+ 		} else {
+ 			break;
+ 		}
+ 
+ 	} while (true);
+
+ 	alert('Раундов сыграно: ' + n);
+
+</script>
