@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<script>
+	
+	var arr = [];
+	var rounds = 100;
+	var reds = 0;
+	var maxReds = 0;
+	var i;
+
+	for (i=0;i<=rounds;i++){
+		arr.push(Math.round(Math.random()*2));
+		if (arr[i]==2) {arr[i]=-1};
+	}
+
+	alert(arr);
+
+	for (i = 0; i<arr.length; i++) {
+		if (arr[i]==1){
+			if (reds==0) {
+			reds++;
+			} else {
+				if ((arr[i-1]==1)) {
+					reds++;
+				}
+			}
+			if (i==arr.length-1){
+				if (reds>maxReds){maxReds = reds;}
+			}
+		} else {
+			if (arr[i-1]==1) {
+				if (reds>maxReds){maxReds = reds;}
+				reds=0;
+			}
+		}
+		
+	}
+
+	alert('Максимальное число подряд идущих 1: ' + maxReds);
+</script>
